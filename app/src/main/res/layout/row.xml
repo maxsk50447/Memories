@@ -4,7 +4,7 @@
     android:padding="20dp" android:background="#33D7FF">
 
     <TextView
-        android:id="@+id/task_title"
+        android:id="@+id/todo_title"
         android:text="Example"
         android:textSize="20sp"
         android:layout_alignParentLeft="true"
