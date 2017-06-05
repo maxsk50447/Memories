@@ -26,15 +26,4 @@
         android:background="#F990F1"
         android:onClick="onClick"/>
 
-    <TextView
-        android:textSize="15sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Date"
-        android:id="@+id/date"
-        android:layout_below="@+id/btnGoCalendar"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="18dp"
-        android:layout_marginStart="18dp" />
 </RelativeLayout>
