@@ -52,16 +52,16 @@ public class DbHelper extends SQLiteOpenHelper {
         db.close();
     }
 
-    public ArrayList<String> getTaskList(){
-        ArrayList<String> taskList = new ArrayList<>();
+    public ArrayList<String> getTodoList(){
+        ArrayList<String> todoList = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(DB_TABLE,new String[]{DB_COLUMN},null,null,null,null,null);
         while(cursor.moveToNext()){
             int index = cursor.getColumnIndex(DB_COLUMN);
-            taskList.add(cursor.getString(index));
+            todoList.add(cursor.getString(index));
         }
         cursor.close();
         db.close();
-        return taskList;
+        return todoList;
     }
 }

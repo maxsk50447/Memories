@@ -25,7 +25,6 @@ public class LoadingActivity extends AppCompatActivity{
             public void run() {
                 startActivity(new Intent(LoadingActivity.this, MainActivity.class));
                 finish();
-//                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         };
     }
